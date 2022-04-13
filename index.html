@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Affogato</title>
+	<style type="text/css">
+
+		body{
+			background-color: #B9C6AE;
+		}
+
+		.heading{
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			font-family: 'Supermercado One', cursive;
+			color: #565D51;
+		}
+
+		.description{
+			display: flex;
+			flex-direction: column;
+			width: 40%;
+		}
+
+		.paragraph{
+			font-family: 'Ubuntu', sans-serif;	
+		}
+
+		.ingredients{
+			background-color: #959FAD;
+			display: flex;
+			justify-content: space-evenly;
+			font-family: 'Ubuntu', sans-serif;	
+			color: #4E555E;	
+			align-items: stretch;
+		}
+
+		.ingredient{
+			background-color: #959FAD;
+			display: flex;
+			justify-content: center;
+			font-family: 'Ubuntu', sans-serif;	
+			color: #4E555E;	
+			align-items: stretch;
+		}
+
+		.recipe{
+			background-color: #9794A1;
+			flex-direction: column;
+			display: flex;
+			column-gap: 20px;
+			justify-content: space-evenly;
+			align-items: center;
+			font-family: 'Ubuntu', sans-serif;
+			color: #474056;
+		}
+
+		img{
+			width: 20%;
+		}
+
+		.bigimg{
+			width: 40%;
+		}
+
+		.warning{
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			color: #94041C;
+			align-items: center;
+			gap: 5%;
+			
+		}
+
+		.warnings{
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			align-items: left;
+			gap: 5%;
+			background-image: url('pink.png');
+			background-size: 50%;
+			justify-content: space-evenly;
+			border: 5px dashed red;
+			border-width: 1%;
+			width: 45%;
+		}
+		
+		#ing div{
+			visibility: hidden;
+		}
+
+		#ing:hover{
+			opacity: 0.5
+		}
+
+		#ing:hover div{
+			visibility: visible;
+		}
+
+		.warnings {
+			animation: mymove 2s infinite;
+		}
+
+		@keyframes mymove {
+			50% {border: 10px solid pink;}
+		}
+		.container {
+			position: relative;
+			width: 50%;
+		}
+
+		.image {
+			display: block;
+			width: 90%;
+			height: 100%;
+			justify-content: center;
+		}
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: auto;
+			opacity: 0;
+			transition: .5s ease;
+			background-color: #9FA8B4;
+		}
+
+		.container:hover .overlay {
+			opacity: .8;
+		}
+
+		.text {
+			color: #565D67;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;	
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			ansform: translate(-50%, -50%);
+			text-align: center;
+		}
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Supermercado+One&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="heading">
+		<div class="description">
+		<h1>Affogato</h1>
+		<p class="paragraph">This is the perfect small dessert for any occasion. The extreme sweetness of the ice cream and the extreme bitterness of the espresso pair very well. When you add the bittersweet dark chocolate, the flavors melt together into a heavenly experience.</p></div>
+		<img src="af1.jpeg">
+	</div>
+
+	<div class="heading"><br><br></div>
+
+	
+	<div class="ingredient">
+		<h2>Ingredients</h2><br>
+	</div>
+
+	<div class="ingredients"><br></div>
+
+	<div class="ingredients">
+		<br><br>
+		<div class="container">
+			<img src="af2.webp" alt="Avatar" class="image">
+				<div class="overlay">
+				<div class="text">Ice Cream</div>
+			</div>
+		</div>
+		<div class="container">
+			<img src="af3.jpeg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">Espresso</div>
+			</div>
+		</div>
+		<div class="container">
+			<img src="af4.jpeg" alt="Avatar" class="image">
+			<div class="overlay">
+				<div class="text">Shaved Dark Chocolate</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ingredients"><br><br></div>
+
+	<div class="ingredients">
+		<div class="warnings">
+			<br>
+			<h2 class="warning">C a u t i o n !</h2>
+			<p class="warning">Contains: Dairy and Approx. 128mg Caffeine</p>
+		</div>
+	</div>
+
+	<br>
+	<div class="recipe">
+		<br>
+		<h2>Recipe</h2>
+	</div>
+
+	<div class="recipe">
+		
+		<br><img class="bigimg" src="af5.png"><p>Brew your Espresso</p><br>
+		<img class="bigimg" src="af6.jpeg"><p>Scoop your Ice Cream</p><br>
+		<img class="bigimg" src="af7.webp"><p>Pour your Espresso over your Ice Cream</p><br>
+		<img class="bigimg" src="af8.webp"><p>Garnish with your Chocolate Shavings</p>
+		
+	</div>
+
+	<h1 class="heading">Enjoy!</h1>
+	
+</body>
+</html>
